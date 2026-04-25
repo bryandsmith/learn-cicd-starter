@@ -28,4 +28,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: test fmt
-        run: test -z $(go fmt ./...)
+        run: test -z "$(go fmt ./...)"
