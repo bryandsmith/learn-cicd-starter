@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 	"time"
+	"strconv"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
@@ -95,6 +96,6 @@ func main() {
 		ReadHeaderTimeout: 5 * time.Second,
 	}
 
-	log.Println("Serving on port:", port)
+	log.Println("Serving on port:", strconv.Quote(port))
 	log.Fatal(srv.ListenAndServe())
 }
