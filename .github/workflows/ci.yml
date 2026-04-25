@@ -25,4 +25,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test fmt
-        run: test -z $(go fmt ./...) 
+        run: test -z $(go fmt ./...)
